@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "magazine-ocr"
+version = "0.1.0"
+description = "Minimal OCR CLI for magazine images and PDFs"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "Pillow>=10.0.0",
+  "pytesseract>=0.3.10",
+  "pypdfium2>=4.30.0",
+]
+
+[project.scripts]
+magazine-ocr = "magazine_ocr.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
