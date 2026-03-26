@@ -9,6 +9,8 @@ description = "Minimal OCR CLI for magazine images and PDFs"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
+  "numpy>=2.0.0",
+  "opencv-python-headless>=4.10.0.84",
   "Pillow>=10.0.0",
   "pytesseract>=0.3.10",
   "pypdfium2>=4.30.0",
@@ -22,4 +24,3 @@ package-dir = {"" = "src"}
 
 [tool.setuptools.packages.find]
 where = ["src"]
-
