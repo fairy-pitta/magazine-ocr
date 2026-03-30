@@ -1,0 +1,28 @@
+{
+  "image_id": "IMG_8795",
+  "version": "v1",
+  "notes": "ユーザー検証済み。単一ページ(31)、レイアウト特殊(編集記事・イラスト混在)。",
+  "pages": [
+    {
+      "side": "single",
+      "page_number": 31,
+      "rows": [
+        {"row_index": 0, "serials": [1, 2], "header": {"prefecture": "北海道", "before": 1}},
+        {"row_index": 1, "serials": [3, 4], "header": null},
+        {"row_index": 2, "serials": [5], "header": null},
+        {"row_index": 3, "serials": [6, 7], "header": null},
+        {"row_index": 4, "serials": [8, 9], "header": {"prefecture": "青森県", "before": 8}}
+      ]
+    }
+  ],
+  "prefecture_flow": [
+    {"prefecture": "北海道", "serial_range": [1, 7], "note": "セクション冒頭。地名: 札幌市/旭川市/釧路市"},
+    {"prefecture": "青森県", "serial_range": [8, 9], "note": "row4にヘッダー。p32以降に継続"}
+  ],
+  "summary": {
+    "total_entries": 9,
+    "serial_range": [1, 9],
+    "confirmed_headers": ["北海道", "青森県"],
+    "note": "レイアウト特殊(編集記事混在)。p32-35は未撮影(☆10-62の約53エントリが欠落)"
+  }
+}
