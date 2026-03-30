@@ -23,6 +23,22 @@ readings.json format (what Claude Code produces):
     }
   }
 }
+
+headers の書き方:
+  {"row": 3, "prefecture": "新潟県", "between": [157, 158]}
+    → ☆157 と ☆158 の間にヘッダー行がある（☆158 から新潟県）
+
+  {"row": 3, "prefecture": "新潟県", "before": 157}
+    → ☆157 より前にヘッダー行がある（☆157 から新潟県）
+
+  {"row": 3, "prefecture": "新潟県", "after": 157}
+    → ☆157 より後にヘッダー行がある（☆158 から新潟県）
+
+前の画像から都道府県が引き継がれる場合（ページ先頭にヘッダーなし）:
+  row 0 に "before": <その画像の最初のシリアル番号> で明示的に書く。
+
+  例: IMG_8799 の先頭が前の画像から引き継いで東京都の場合
+  {"row": 0, "prefecture": "東京都", "before": 146}
 """
 from __future__ import annotations
 
